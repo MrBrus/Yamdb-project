@@ -1,28 +1,25 @@
 import uuid
 
 from django.core.mail import EmailMessage, send_mail
-
-from rest_framework import permissions, status, viewsets, filters
+from rest_framework import filters, permissions, status, viewsets
 from rest_framework.decorators import action, api_view
 from rest_framework.filters import SearchFilter
+from rest_framework.generics import get_object_or_404
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.views import APIView
-from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
-from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
-
+from rest_framework.views import APIView
+from rest_framework_simplejwt.tokens import AccessToken, RefreshToken
+from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import User
 
-from .permissions import (AdminOnly,
-                          IsAdminOrReadOnly,
-                          AdminModeratorAuthorPermission)
-from .serializers import (SerializerNotAdmin, SerializerSignUp,
-                          SerializerUsers, SerializerToken, ReviewSerializer,
-                          CommentSerializer, CategorySerializer,
-                          GenreSerializer, TitleSerializer)
 from .filters import TitlesFilter
-from reviews.models import Review, Title, Comment, Category, Genre
+from .permissions import (AdminModeratorAuthorPermission, AdminOnly,
+                          IsAdminOrReadOnly)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, ReviewSerializer,
+                          SerializerNotAdmin, SerializerSignUp,
+                          SerializerToken, SerializerUsers, TitleSerializer)
 
 
 @api_view(['POST'])

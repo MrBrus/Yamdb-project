@@ -1,7 +1,6 @@
 ## **Описание проекта YaMDb:**
 
-
-[Yamdb_workflow](https://github.com/MrBrus/yamdb_final/yamdb_workflow.yml)
+![Yamdb_workflow](https://github.com/MrBrus/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 http://mrbrusyamdbproject.hopto.org
 

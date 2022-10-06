@@ -1,6 +1,10 @@
 ## **Описание проекта YaMDb:**
 
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
+[Yamdb_workflow](https://github.com/MrBrus/yamdb_final/yamdb_workflow.yml)
+
+http://mrbrusyamdbproject.hopto.org
+
 
 1) Проект YaMDb собирает отзывы (Review)
 пользователей на произведения (Titles). 

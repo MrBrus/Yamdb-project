@@ -2,7 +2,7 @@
 
 ![Yamdb_workflow](https://github.com/MrBrus/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-http://mrbrusyamdbproject.hopto.org
+[http://mrbrusyamdbproject.hapto.org/admin/](http://130.193.41.154/admin)
 
 
 1) Проект YaMDb собирает отзывы (Review)
